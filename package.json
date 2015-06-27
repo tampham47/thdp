@@ -14,6 +14,9 @@
     "html-readability": "^0.1.4",
     "jade": "~1.9.2",
     "morgan": "~1.5.3",
+    "node-readability": "^1.0.1",
+    "node-readability-edge": "^0.3.2",
+    "prolab-readability": "0.0.2",
     "serve-favicon": "~2.2.1"
   }
 }
