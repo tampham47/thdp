@@ -59,6 +59,6 @@ app.use(function(err, req, res, next) {
 });
 
 app.listen(app.get('port'), function(port) {
-  console.log('Listening on port ' + app.get('port') + '...');
+  console.log('Listening on port ' + app.get('port') + '....');
 });
 // module.exports = app;
