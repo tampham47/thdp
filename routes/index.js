@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
-var read = require('node-readability');
-var jsdom = require('jsdom');
+// var read = require('node-readability');
+// var jsdom = require('jsdom');
 var request = require('request');
 var cheerio = require('cheerio');
 
