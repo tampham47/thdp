@@ -32,7 +32,7 @@ router.get('/', function(req, res, next) {
 
   request(url, function (error, response, html) {
     if (!error && response.statusCode == 200) {
-      console.log(html);
+      // console.log(html);
       var $query = cheerio.load(html);
       $query = $query('main').remove();
 
