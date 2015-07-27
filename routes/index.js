@@ -20,11 +20,13 @@ var craw = new Crawler({
 /* GET home page. */
 router.get('/', function(req, res, next) {
 
+  var url = 'http://nghiencuulichsu.com/2015/07/24/tu-nguyen-truong-to-toi-bo-ngu-vinh-quynh-ton-to-khoi-bai-2/';
+
   craw.queue([{
-    uri: 'http://www.triethocduongpho.com/2015/06/24/ban-ve-lam-dung-danh-xung/',
+    uri: url,
     callback: function(err, result, $) {
-      var $content = $('main').remove();
-      res.send($content.html());
+      var content = $('#content').remove().html();
+      res.send(content);
     }
   }]);
 });
